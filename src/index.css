@@ -1,0 +1,48 @@
+:root {
+  --background-color: light-dark(white, black);
+  --text-color: light-dark(black, white);
+  --button-bg: light-dark(#e0e0e0, #333);
+  --button-bg-hover: light-dark(#d0d0d0, #444);
+  --button-text: light-dark(black, white);
+  --link-text: light-dark(#007bff, #66aaff);
+  --link-hover: light-dark(#0056b3, #3399ff);
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--link-text);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--link-hover);
+}
+button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 5px;
+}
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-color: var(--button-bg-hover);
+}

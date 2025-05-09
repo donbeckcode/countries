@@ -1,0 +1,44 @@
+.countryWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: 24px;
+  border-radius: 8px;
+  border: 1px solid var(--button-bg);
+  max-width: 350px;
+
+  @media screen and (max-width: 1200x) {
+    max-width: 300px;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: 250px;
+  }
+
+  @media screen and (max-width: 480px) {
+    max-width: 200px;
+  }
+}
+
+.wider {
+  width: 50%;
+  margin: 50px;
+  border: none;
+}
+
+.flag {
+  width: 100%;
+  height: 35%;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.borderButton {
+  border: 2px solid var(--button-bg);
+  background-color: transparent;
+  color: var(--button-text);
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}

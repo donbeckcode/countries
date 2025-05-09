@@ -1,0 +1,16 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: light-dark(#ccc, #333);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.headerLogo {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--button-text);
+}
