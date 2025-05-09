@@ -1,15 +1,7 @@
-import { Header } from "./components/Header/Header";
-import { Results } from "./components/Results/Results";
-
-import "./App.css";
+import { Home } from "./pages/Home/Home";
 
 function App() {
-  return (
-    <div className="appWrapper">
-      <Header />
-      <Results />
-    </div>
-  );
+  return <Home />;
 }
 
 export default App;
